@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e7e7e7;
+    font-size: 12px;
+    font-family: "Microsoft Yahei";
+}
+a{
+    text-decoration:none;
+    color: #fff;
+}
+
+
+/* 导航栏 */
+.header{
+    /* background-color: #f7f7f7; */
+    width: 100%;
+    height:80px;
+    position: fixed;
+    
+    z-index: 3;
+}
+.header_wrap{
+    width:100%;
+    height:80px;
+    position: relative;
+    /* background-color:rgba(0,0,0,0.5) */
+}
+
+.header_logo{
+    width: 200px;
+    height:38px;
+    line-height: 38px;
+    font-size: 20px;
+    color:#fff;
+    text-indent: 50px;
+    background: url(../img/logo.png) left center no-repeat;
+    background-size: 38px 38px;
+    position: absolute;
+    top: 50%;
+    margin-top: -19px;
+    left: 20px;
+    cursor:pointer;
+}
+
+.header_nav{
+    position: absolute;
+    right:20px;
+    height: 38px;
+    top: 50%;
+    margin-top: -19px;
+}
+.header_nav-item{
+    color:#fff;
+    font-size: 14px;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    float:left;
+    position: relative;
+    width: 60px;
+    text-align: center;
+    padding-left: 40px;
+}
+.header_nav-item:hover{
+    color:#f01400;
+}
+.outline_item_status_active{
+    color:#f01400;
+}
+.header_button:hover{
+    color:#f01400;
+    background: #f3f5f7;
+}
+.header_button{
+    background: #f01400;
+    color:#f4f4f5;
+    text-align: center;
+    width: 90px;
+    border-radius: 3px;
+    margin-left:40px;
+    padding:0;
+}
+.screen-1,.screen-2,.screen-3,.screen-4,.screen-5{
+    height: 640px;
+    width: 100%;
+}
+.screen-1_wrap,.screen-2_wrap,.screen-3_wrap,.screen-4_wrap,.screen-5_wrap{
+    height: 640px;
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 第1屏 */
+.screen-1{
+    background: url(../img/sc1.jpg) no-repeat center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+}
+.screen-1_wrap{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+}
+.screen-1_heading{
+    color:#fff;
+    font-weight:normal;
+    font-size: 42px;
+    text-align: center;
+    margin-top:240px;
+
+}
+.screen-1_subheading{
+    color:#fff;
+    font-weight:normal;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 32px;  
+}
+
+/* 第2屏 */
+.screen-2{
+    position: relative;
+    overflow: hidden;
+    background: url(../img/sc2.png) no-repeat center bottom #f3f5f7;
+    background-size: auto;
+}
+.screen-2_wrap{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.screen-2_heading{
+    color:#000;
+    font-weight:normal;
+    font-size: 42px;
+    text-align: center;
+    padding-top: 85px;
+}
+.line{
+    height:3px;
+    width:50px;
+    background-color: red;
+    border-radius: 1px;
+    margin: 0 auto;
+    margin-top:35px;
+}
+.screen-2_subheading{
+    color:#000;
+    font-weight:normal;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 24px;  
+}
+.people{
+   position: absolute;
+   left:50%;
+   margin-left:-139px;
+   height: 383px;
+   width:278px;
+   background: url(../img/sc2-1.png) no-repeat center bottom;
+   bottom: 0px;
+}
+.plane{
+    position: absolute;
+    left:50%;
+    /* margin-left:-133px; */
+    height: 205px;
+    width:266px;
+    background: url(../img/sc2-2.png) no-repeat center bottom;
+    bottom: 100px;
+ }
+
+/* 第3屏 */
+.screen-3{
+    position: relative;
+    overflow: hidden;
+    background:url(../img/sc3.png) no-repeat center left #2b333b;
+    background-size: 20%;
+    background-position:130px;
+    transition: 2s;
+}
+.screen-3_animate_done{
+    background-size:25%;
+}
+.screen-3_wrap{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; 
+}
+.screen-3_text{
+    position: absolute;
+    left:660px;
+    top:225px;
+}
+.screen-3_heading{
+    color:#fff;
+    font-weight:normal;
+    font-size: 37px;
+}
+.screen-3 .line{
+    margin: 26px 0;    
+}
+.screen-3_subheading{
+    color:#fff;
+    font-weight:normal;
+    font-size: 16px;
+}
+.screen-3_icon{
+    position: absolute;
+    left:660px;
+    top:518px;
+
+}
+.screen-3_icon div{
+    height:58px;
+    width:58px;
+    border-radius: 50%;
+    border: white solid 4px;
+    text-align: center;
+    line-height: 58px;
+    display: inline-block;
+    margin-right:35px;
+    animation:pulse 1s infinite .5s; 
+}
+.screen-3_icon div:nth-of-type(1){
+    border:#1f5975 solid 4px;
+    color:#0294b5;
+}
+.screen-3_icon div:nth-of-type(2){
+    border:#424d76 solid 4px;
+    color:#7888fd;
+}
+.screen-3_icon div:nth-of-type(3){
+    border:#6b4146 solid 4px;
+    color:#ff6060;
+}
+.screen-3_icon div:nth-of-type(4){
+    border:#2a3b44 solid 4px;
+    color:#22c7e5;
+}
+.screen-3_icon div:nth-of-type(5){
+    border:#3e4e40 solid 4px;
+    color:#83bd50;
+}
+/* -----五个语言模块的呼吸灯效果 */
+@keyframes pulse{
+    0%{
+        -webkit-transform:scale3d(1,1,1);
+        transform:scale3d(1,1,1);
+    }
+    50%{
+        -webkit-transform:scale3d(1.05,1.05,1.05);
+        transform:scale3d(1.05,1.05,1.05);
+    }
+    100%{
+        -webkit-transform:scale3d(1,1,1);
+        transform:scale3d(1,1,1);
+    }
+}
+
+/* 第4屏 */
+.screen-4{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: #f3f5f7;
+}
+.screen-4_heading{
+    color:#000;
+    font-weight:bolder;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 89px;
+}
+.screen-4 line{
+    margin-top: 38px;
+}
+.screen-4_subheading{
+    color:#000;
+    font-weight:normal;
+    font-size: 15px;
+    padding-top: 22px;
+    text-align: center;  
+}
+.screen-4_pic{
+    width:1200px;
+    height: 270px;
+    margin:0 auto;
+    position: relative;
+}
+.screen-4_pic_item{
+    width: 200px;
+    height: 150px;
+    position: relative;
+    margin-top: 80px;
+    margin-left: 80px;
+    float: left;
+}
+.screen-4_pic_item_1{
+    background: url(../img/sc4-1.png) no-repeat center top;
+}
+.screen-4_pic_item_2{
+    background: url(../img/sc4-2.png) no-repeat center top;
+}
+.screen-4_pic_item_3{
+    background: url(../img/sc4-3.png) no-repeat center top;
+}
+.screen-4_pic_item_4{
+    background: url(../img/sc4-4.png) no-repeat center top;
+}
+.screen-4_pic_disc{
+    font-size:16px;
+    width: 100%;
+    line-height: 16px;
+    color:#000;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+/* 第5屏 */
+.screen-5{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: url(../img/sc5.jpg) no-repeat center bottom #fff;
+    background-size: cover;
+}
+.screen-5_pic{
+    height: 200px;
+    width:200px;
+    margin: 96px auto 56px;
+    background:url(../img/sc5-1.png) no-repeat;
+    z-index:3;
+}
+.screen-5_heading{
+    color:#fff;
+    font-weight:normal;
+    font-size: 46px;
+    text-align: center;
+}
+.screen-5 .line{
+    background-color: #fff;
+    border-radius: 1px;
+    margin: 30px auto;  
+} 
+.screen-5_subheading{
+    color:#fff;
+    font-weight:normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* 按钮 */
+.screen-buy{
+    height: 200px;
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.screen-buy_btn{
+    height: 57px;
+    width: 240px;
+    top:60px;
+    text-align: center;
+    line-height: 57px;
+    font-size: 18px;
+    color: #000;
+    border:#000 solid 1px;
+    display: inline-block;
+    position: relative;
+}
+.screen-buy_btn:hover{
+    color:red;
+}
+/* 侧边导航条 */
+.outline{
+    position: fixed;
+    padding: 5px 5px;
+    bottom:120px;
+    right: 0;
+    z-index: 3;
+    background: #fff;
+    box-shadow:0px 4px 12px 0px rgba(7,17,27,0.1)
+}
+.outline_item{
+    display: block;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 0;
+    background: #fff;
+    margin: 5px 0px 0px;
+    border-top:1px solid #eee;
+    text-align: center;
+    color:#93999f;
+}
+.outline_item:first-child{
+    border:none;
+}
+.outline_item:hover,
+.outline_item_status_active{
+    color:#f00;
+}
+.header_nav-tip{
+    position: absolute;
+    width:60px;
+    margin-left:40px;
+    height:2px;
+    background: #f00;
+    left:0;
+    bottom:0;
+    transition: all .5s;
+}
+
+/* 页尾 */
+.footer{
+    width:100%;
+    height: 80px;
+    /* line-height: 80px; */
+    text-align: center;
+    color:#fff;
+    font-size:12px;
+    background-color: #000;
+    padding-top:30px;
+}
+.footer_nav{
+    padding-bottom:11px;
+}
+.footer a{
+    margin:0 33px 0 33px;
+}
+.footer a:hover{
+    color: red;
+}
+

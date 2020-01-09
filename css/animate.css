@@ -1,0 +1,168 @@
+/* 导航栏动画 */
+.header_wrap{
+    transition:all 1s;
+}
+.header_wrap_animate_init{
+    opacity: 0;
+    transform: translate(0,-100%);
+}
+.header_wrap_animate_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+/* 第一屏动画 */
+.screen-1_heading{
+    transition:all 1s;
+}
+.screen-1_subheading{
+    transition:all 2s;
+}
+.screen-1_heading_animate_init,.screen-1_subheading_animate_init{
+    opacity: 0;
+    transform: translate(0,100%);
+}
+.screen-1_heading_animate_done,.screen-1_subheading_animate_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+/* 第二屏动画 */
+.screen-2_heading,.people{
+    transition:all 1s;
+}
+.screen-2_line{
+    transition:all 1s;
+}
+.screen-2_subheading{
+    transition:all 2s;
+}
+.screen-2_heading_animate_init,.screen-2_line_animate_init,.screen-2_subheading_animate_init,
+.people_animate_init{
+    opacity: 0;
+    transform: translate(0,100%);
+}
+
+.screen-2_heading_animate_done,.screen-2_line_animate_done,.screen-2_subheading_animate_done,
+.people_animate_done,.plane_animate_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+/* 小飞机动画 */
+.plane{
+    transition: all 2s 1s;
+}
+.plane_animate_init{
+    opacity: 0;
+    transform: translate(0,100%);
+}
+.plane_animate_done{
+    opacity: 1;
+    animation:plane_animate 1s ease-in-out ;
+    
+}
+@keyframes plane_animate{
+    0%{
+        opacity: 0;
+        transform: translate(0,100%);
+    }
+    25%{
+        opacity: 1;
+        transform: translate(0,-20%)
+    }
+    50%{
+        opacity: 1;
+        transform: translate(0,10%)
+    }
+    75%{
+        opacity: 1;
+        transform: translate(0,-5%)
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0)
+    }
+    
+}
+
+
+/* 第三屏动画 */
+.screen-3_heading,.screen-3_line,.screen-3_subheading,.screen-3_icon{
+    transition:all 1s;
+}
+
+.screen-3_heading_animate_init,.screen-3_line_animate_init,.screen-3_subheading_animate_init,.screen-3_icon_animate_init{
+    opacity: 0;
+    transform: translate(0,100%);
+}
+.screen-3_heading_animate_done,.screen-3_line_animate_done,.screen-3_subheading_animate_done,.screen-3_icon_animate_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* 第四屏动画 */
+.screen-4_heading,.screen-4_line,.screen-4_subheading,.screen-4_pic{
+    transition:all 1s;
+}
+.screen-4_pic_animate_init{
+    opacity: 0;  
+    transform: scale(.1,.1);
+}
+.screen-4_pic_animate_done{
+    opacity: 1;  
+    transform: scale(1,1);
+}
+.screen-4_heading_animate_init,.screen-4_line_animate_init,.screen-4_subheading_animate_init{
+    opacity: 0;
+    transform:translate(0,100%);
+}
+.screen-4_heading_animate_done,.screen-4_line_animate_done,.screen-4_subheading_animate_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* 第五屏动画 */
+.screen-5_heading,.screen-5_line,.screen-5_subheading,.screen-5_pic{
+    transition:all 1s;
+}
+.screen-5_pic_animate_init{
+    opacity: 0;  
+    transform: scale(.1,.1);
+}
+.screen-5_pic_animate_done{
+    opacity: 1;  
+    transform: scale(1,1);
+}
+.screen-5_heading_animate_init,.screen-5_line_animate_init,.screen-5_subheading_animate_init{
+    opacity: 0;
+    transform: translate(0,100%);
+}
+
+.screen-5_heading_animate_done,.screen-5_line_animate_done,.screen-5_subheading_animate_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* 导航条样式变动 */
+.header{
+    transition: all 1s;
+}
+.header_status_black{
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* 大纲样式 */
+.outline{
+    transform: translate(100%,0);
+    transition: all 1s;
+}
+.outline_status_in{
+    transform: translate(0,0);
+}
+.outline_item{
+    transition: all 1s;
+}
