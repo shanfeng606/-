@@ -29,7 +29,6 @@ a{
     position: relative;
     /* background-color:rgba(0,0,0,0.5) */
 }
-
 .header_logo{
     width: 200px;
     height:38px;
@@ -68,9 +67,13 @@ a{
 .header_nav-item:hover{
     color:#f01400;
 }
+.header_nav-item_status_active{
+    color:red;
+}
 .outline_item_status_active{
     color:#f01400;
 }
+
 .header_button:hover{
     color:#f01400;
     background: #f3f5f7;
